@@ -30,7 +30,7 @@ function addMessage(message, sender) {
     messageElement.textContent = message;
     chatBox.appendChild(messageElement);
 
-    // Auto scroll to the bottom of the chat
+    // Auto scroll to the bottom of the chat (so the newest message is always visible)
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 

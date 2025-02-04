@@ -25,8 +25,6 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Header Section */
@@ -45,6 +43,8 @@ body {
     padding: 20px;
     overflow-y: auto;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Chat Messages */
@@ -53,17 +53,21 @@ body {
     padding: 10px 15px;
     border-radius: 15px;
     max-width: 75%;
+    display: inline-block;
+    word-wrap: break-word;
 }
 
+/* Bot Message */
 .bot-message {
     background-color: #f1f1f1;
-    align-self: flex-start;
+    align-self: flex-start; /* Align bot message to the left */
 }
 
+/* User Message */
 .user-message {
     background-color: #25d366;
     color: white;
-    align-self: flex-end;
+    align-self: flex-end; /* Align user message to the right */
 }
 
 /* Input Section */
